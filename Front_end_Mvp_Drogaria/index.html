@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    
+    <title>Cadastro de Drogarias</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/CSS/style.css" >
+
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h2>Drogarias cadastradas no programa da farmácia popular</h2>
+        </div>
+        <div class="banner">
+            <img src="/img/servicos--farmacia-popular.jpg">
+        </div>
+    </header>
+
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Drogaria: ">
+        <input type="text" id="newContact" placeholder="Responsável técnico:">
+        <input type="text" id="newCrf" placeholder="CRF:">
+        <input type="text" id="newAddress" placeholder="Endereço:">
+        <input type="text" id="newPhone" placeholder="Telefone:">
+        <button onclick="newItem()" class="addBtn">Adicionar</button>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Drogaria</th>
+                <th>Responsável técnico</th>
+                <th>CRF</th>
+                <th>Endereço</th>
+                <th>Telefone</th>   
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            
+            </tr>
+        </table>
+    </section>
+
+    <script src="Js/scripts.js"></script>
+    
+</body>
+</html>
